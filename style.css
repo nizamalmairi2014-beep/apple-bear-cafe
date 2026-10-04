@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{--ink:#27231f;--muted:#756e66;--paper:#fbf7ef;--cream:#f2e7d3;--apple:#9d342c;--gold:#b47a2b;--white:#fffdf9;--line:#e5d9c7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.6}
+a{color:inherit}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 7%;position:sticky;top:0;z-index:10;background:rgba(251,247,239,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.brand{font-weight:700;text-decoration:none;font-size:1.05rem}.brand span{margin-right:7px}.nav nav{display:flex;gap:28px;align-items:center}.nav nav a{text-decoration:none;font-size:.92rem}.nav-cta{background:var(--ink);color:white!important;padding:9px 17px;border-radius:999px}.menu-btn{display:none;border:0;background:none;font-size:1.5rem}
+.hero{min-height:650px;padding:80px 7%;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center;background:radial-gradient(circle at 85% 20%,#ead9b9 0,transparent 35%),var(--paper)}
+.eyebrow{letter-spacing:.16em;font-size:.73rem;font-weight:700;color:var(--apple);margin:0 0 12px}.hero h1,.section h2,.cta h2{font-family:"Playfair Display",serif;line-height:1.08}.hero h1{font-size:clamp(3rem,6vw,5.7rem);margin:0 0 24px;max-width:850px}.hero h1 em{color:var(--apple);font-style:normal}.lead{font-size:1.15rem;color:var(--muted);max-width:620px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{display:inline-block;text-decoration:none;border-radius:999px;padding:12px 20px;font-weight:700;font-size:.92rem}.primary{background:var(--apple);color:white}.secondary{border:1px solid #cdbda7;background:transparent}.light{background:white;color:var(--ink)}.rating{font-size:.9rem;color:var(--muted)}.rating strong{color:var(--ink)}
+.hero-card{min-height:390px;border-radius:34px;padding:38px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,#e8d4ae,#c9a064);box-shadow:0 25px 70px rgba(65,44,20,.15);position:relative;overflow:hidden}.hero-card:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.18);top:-70px;right:-60px}.apple{font-size:6rem;position:absolute;top:55px;right:55px;filter:drop-shadow(0 12px 12px rgba(0,0,0,.12))}.hero-card h2{font-family:"Playfair Display",serif;font-size:2rem;margin:0 0 8px}.hero-card p{margin:4px 0;color:#55483b}.hero-card .small{letter-spacing:.18em;font-size:.7rem;font-weight:700}
+.section{padding:100px 7%}.split{display:grid;grid-template-columns:1fr 1fr;gap:80px;background:var(--white)}.section h2{font-size:clamp(2.2rem,4vw,3.6rem);margin:0}.copy{color:var(--muted);font-size:1.05rem}.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.chips span{border:1px solid var(--line);padding:9px 13px;border-radius:999px;font-size:.82rem;background:var(--paper)}
+.menu-section{background:var(--cream)}.section-heading{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:38px}.muted,.notice{color:var(--muted);font-size:.9rem}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.food-card{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:25px;transition:transform .2s,box-shadow .2s}.food-card:hover{transform:translateY(-5px);box-shadow:0 14px 35px rgba(70,45,20,.1)}.food-icon{font-size:2rem}.food-card h3{margin:12px 0 5px;font-family:"Playfair Display",serif;font-size:1.35rem}.food-card p{margin:0;color:var(--muted);font-size:.9rem}
+.reviews{background:var(--white)}.stars{letter-spacing:.12em;color:var(--gold);font-size:1.25rem}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.review-grid blockquote{margin:0;padding:28px;border:1px solid var(--line);border-radius:22px;background:var(--paper)}blockquote p{font-family:"Playfair Display",serif;font-size:1.2rem;line-height:1.45}cite{font-style:normal;font-size:.82rem;color:var(--muted)}
+.location{background:var(--paper)}.location-card{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;background:var(--ink);color:white;border-radius:30px;padding:45px}.location-card .eyebrow{color:#d9a45c}.location-card p{color:#d6cec4;max-width:650px}.location-card a{text-decoration:underline}.map-placeholder{min-height:280px;border-radius:22px;background:linear-gradient(145deg,#dfcda9,#a77d49);display:flex;align-items:center;justify-content:center;flex-direction:column;color:#33281f}.map-placeholder .pin{font-size:3rem}.map-placeholder span{font-size:.85rem}
+.cta{text-align:center;padding:100px 7%;background:var(--apple);color:white}.cta .eyebrow{color:#f0c58b}.cta h2{font-size:clamp(2.5rem,5vw,4.5rem);margin:0}.cta p{opacity:.85}.cta .btn{margin-top:12px}
+footer{padding:35px 7%;display:flex;justify-content:space-between;gap:20px;background:#1e1b18;color:#ddd;font-size:.82rem}footer div{display:flex;gap:18px}footer span{color:#999}
+@media(max-width:800px){.nav{padding:0 5%}.nav nav{display:none;position:absolute;left:0;right:0;top:76px;padding:20px 5%;background:var(--paper);flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.nav nav.open{display:flex}.menu-btn{display:block}.hero{grid-template-columns:1fr;padding:65px 5%}.hero-card{min-height:330px}.section{padding:70px 5%}.split,.location-card{grid-template-columns:1fr;gap:35px}.menu-grid,.review-grid{grid-template-columns:1fr}.section-heading{display:block}.section-heading .muted{margin-top:15px}footer{flex-direction:column}footer div{flex-direction:column;gap:3px}}
+
+
+/* Reservation form */
+.reservation{background:#f2e7d3}
+.reservation-form{max-width:760px;margin:0 auto;background:var(--white);padding:32px;border:1px solid var(--line);border-radius:24px;display:grid;gap:18px;box-shadow:0 18px 45px rgba(70,45,20,.07)}
+.reservation-form label{display:grid;gap:8px;font-size:.9rem;font-weight:700}
+.reservation-form input,.reservation-form select,.reservation-form textarea{width:100%;font:inherit;font-weight:400;color:var(--ink);background:#fff;border:1px solid #d8cbb9;border-radius:12px;padding:13px 14px;outline:none}
+.reservation-form input:focus,.reservation-form select:focus,.reservation-form textarea:focus{border-color:var(--apple);box-shadow:0 0 0 3px rgba(157,52,44,.1)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-note,.form-status{font-size:.82rem;color:var(--muted);margin:0}
+.reservation-form button{border:0;cursor:pointer;justify-self:start}
+@media(max-width:600px){.reservation-form{padding:22px}.form-row{grid-template-columns:1fr}.reservation-form button{width:100%}}
+
+
+/* =========================
+   RESERVATION
+========================= */
+.reservation {
+  background: var(--cream);
+}
+
+.reservation-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(39, 35, 31, 0.08);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.reservation-card label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.reservation-card input,
+.reservation-card select,
+.reservation-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 13px 14px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reservation-card input:focus,
+.reservation-card select:focus,
+.reservation-card textarea:focus {
+  border-color: var(--apple);
+  box-shadow: 0 0 0 3px rgba(157, 52, 44, 0.1);
+}
+
+.reservation-card textarea {
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.reservation-card .btn-primary {
+  border: 0;
+  cursor: pointer;
+}
+
+.reservation-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .reservation-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Bear Cafe — Jakarta Selatan</title>
+  <meta name="description" content="Apple Bear Cafe — restoran keluarga yang homey di Jakarta Selatan. Lihat menu, lokasi, jam buka, dan kontak.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home"><span>🍎</span> Apple Bear Cafe</a>
+    <button class="menu-btn" aria-label="Buka menu">☰</button>
+    <nav>
+      <a href="#about">Tentang</a>
+      <a href="#menu">Menu</a>
+      <a href="#reviews">Ulasan</a>
+      <a href="#reservation">Reservasi</a>
+      <a href="#location">Lokasi</a>
+      <a class="nav-cta" href="tel:087888330048">Hubungi</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">FAMILY RESTAURANT · JAKARTA SELATAN</p>
+        <h1>Tempat nyaman untuk <em>makan & bersantai.</em></h1>
+        <p class="lead">Nikmati suasana homey, kopi, makanan hangat, dan minuman segar di Apple Bear Cafe.</p>
+        <div class="actions">
+          <a class="btn primary" href="#menu">Lihat Menu</a>
+          <a class="btn secondary" href="#location">Lihat Lokasi</a>
+        </div>
+        <div class="rating"><strong>★ 4,8</strong> <span>· 32 ulasan</span> <span>· Rp50–75 ribu/orang</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="apple">🍎</div>
+        <div>
+          <p class="small">APPLE BEAR CAFE</p>
+          <h2>Homey. Friendly. Delicious.</h2>
+          <p>Jl. H. Nawi Raya No.2A, Jakarta Selatan</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section split">
+      <div>
+        <p class="eyebrow">TENTANG KAMI</p>
+        <h2>Nyaman untuk makan, ngobrol, atau menunggu.</h2>
+      </div>
+      <div class="copy">
+        <p>Apple Bear Cafe adalah restoran keluarga dengan suasana yang nyaman dan homey. Cocok untuk makan di tempat, membawa pulang makanan, maupun memesan antar.</p>
+        <div class="chips">
+          <span>✓ Makan di tempat</span>
+          <span>✓ Bawa pulang</span>
+          <span>✓ Antar tanpa bertemu</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section menu-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">MENU & SOROTAN</p>
+          <h2>Favorit untuk dicoba</h2>
+        </div>
+        <p class="muted">Beberapa menu yang tercantum di Google Maps.</p>
+      </div>
+      <div class="menu-grid">
+        <article class="food-card"><div class="food-icon">🍝</div><h3>Pasta Aglio Olio</h3><p>Pasta dengan cita rasa gurih dan aromatik.</p></article>
+        <article class="food-card"><div class="food-icon">🍛</div><h3>Chicken Katsu Curry</h3><p>Chicken katsu dengan saus curry yang comforting.</p></article>
+        <article class="food-card"><div class="food-icon">🍚</div><h3>Katsu Don</h3><p>Hidangan katsu dengan gaya donburi.</p></article>
+        <article class="food-card"><div class="food-icon">🥐</div><h3>Cheese Croissant</h3><p>Croissant dengan sentuhan keju.</p></article>
+        <article class="food-card"><div class="food-icon">🥥</div><h3>Ice Kelapa Kopyor</h3><p>Minuman segar dengan rasa kelapa kopyor.</p></article>
+        <article class="food-card"><div class="food-icon">🍵</div><h3>Es Kelapa Kopyor</h3><p>Pilihan segar untuk menemani santai.</p></article>
+      </div>
+      <p class="notice">*Menu dan harga dapat berubah. Hubungi restoran untuk informasi terbaru.</p>
+    </section>
+
+    <section id="reviews" class="section reviews">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">APA KATA PENGUNJUNG</p>
+          <h2>Rating 4,8 / 5</h2>
+        </div>
+        <span class="stars">★★★★★</span>
+      </div>
+      <div class="review-grid">
+        <blockquote><p>“Untuk tempat santai-santai, ini memang mantap. Suasananya sangat homey.”</p><cite>— Khair Risan · Local Guide</cite></blockquote>
+        <blockquote><p>“Tempatnya lucu, stafnya baik banget.”</p><cite>— Audy Grace · Local Guide</cite></blockquote>
+        <blockquote><p>“Kafe di Jaksel ... vibes tempat dan makanannya homey banget, harga bersahabat.”</p><cite>— Christofer Tjandra · Local Guide</cite></blockquote>
+      </div>
+      <p class="notice">Kutipan ulasan ditampilkan sebagai contoh dari informasi yang kamu berikan; gunakan hanya dengan izin pemilik jika website ini akan dipublikasikan.</p>
+    </section>
+
+
+    <section id="reservation" class="section reservation">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">BOOK YOUR TABLE</p>
+          <h2>Reservasi meja</h2>
+        </div>
+        <p class="muted">Isi detail kunjunganmu. Permintaan akan dikirim melalui WhatsApp untuk dikonfirmasi oleh pihak cafe.</p>
+      </div>
+      <form id="reservation-form" class="reservation-form">
+        <label>Nama lengkap
+          <input name="name" type="text" placeholder="Nama kamu" required>
+        </label>
+        <div class="form-row">
+          <label>Tanggal
+            <input name="date" type="date" required>
+          </label>
+          <label>Jam
+            <input name="time" type="time" required>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>Jumlah tamu
+            <select name="guests" required>
+              <option value="1 orang">1 orang</option>
+              <option value="2 orang" selected>2 orang</option>
+              <option value="3 orang">3 orang</option>
+              <option value="4 orang">4 orang</option>
+              <option value="5 orang">5 orang</option>
+              <option value="6 orang">6 orang</option>
+              <option value="7+ orang">7+ orang</option>
+            </select>
+          </label>
+          <label>Nomor WhatsApp
+            <input name="contact" type="tel" placeholder="08xxxxxxxxxx" required>
+          </label>
+        </div>
+        <label>Catatan (opsional)
+          <textarea name="notes" rows="3" placeholder="Contoh: kursi bayi, acara ulang tahun, atau permintaan khusus"></textarea>
+        </label>
+        <button class="btn primary" type="submit">Kirim permintaan reservasi via WhatsApp</button>
+        <p class="form-note">Reservasi belum terkonfirmasi sampai pihak Apple Bear Cafe membalas. Jam dan ketersediaan meja perlu dikonfirmasi langsung.</p>
+        <p id="form-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+
+    <section id="location" class="section location">
+      <div class="location-card">
+        <div>
+          <p class="eyebrow">KUNJUNGI KAMI</p>
+          <h2>Apple Bear Cafe</h2>
+          <p>Jl. H. Nawi Raya No.2A, RT.4/RW.2, Gandaria Utara, Kec. Kebayoran Baru, Jakarta Selatan 12140</p>
+          <p><strong>Jam:</strong> Buka · tutup pukul 21.00</p>
+          <p><strong>Telepon:</strong> <a href="tel:087888330048">0878-8833-0048</a></p>
+          <div class="actions">
+            <a class="btn primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Apple%20Bear%20Cafe%2C%20Jl.%20H.%20Nawi%20Raya%20No.2A%2C%20Jakarta%20Selatan">Buka Google Maps</a>
+            <a class="btn secondary" href="tel:087888330048">Telepon</a>
+          </div>
+        </div>
+        <div class="map-placeholder">
+          <div class="pin">📍</div>
+          <strong>Gandaria Utara</strong>
+          <span>Jakarta Selatan</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p class="eyebrow">APPLE BEAR CAFE</p>
+      <h2>See you at Apple Bear. 🍎</h2>
+      <p>Datang, duduk santai, dan nikmati waktu bersama.</p>
+      <a class="btn light" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Apple%20Bear%20Cafe%2C%20Jakarta%20Selatan">Dapatkan Rute</a>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>🍎 Apple Bear Cafe</strong><span>Restoran keluarga · Jakarta Selatan</span></div>
+    <p>Website demo — dibuat berdasarkan informasi yang diberikan pengguna.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
